@@ -1,0 +1,27 @@
+NPM Understanding
+-----------------
+npm- Node package manager
+Matlab ek jagah jaha par hume alag alag codebases mtlb packages milenge
+
+Packages VS Modules-
+Nodejs mein jo core installed aata h usey kehte hai modules.
+Mainly jo hum npm se install krte hai unhe kehte hai packages.
+
+Installing and Uninstalling anything basics & advanced
+------------------------------------------------------
+Install package- type npm install packagekanaam in terminal
+Uninstall package- type npm uninstall packagekanaam in terminal
+Install particular versions - type npm install packagekanaam@versionkanaam
+
+Understanding node modules
+--------------------------
+node modules - Jo bhi packages install karte hai manlo koi package install kia us package ko
+kisi aur package ki bhi zarurat ho toh vo dependency aur uspar dependent wali dono ka code is
+node modules folder mein aajayega.
+
+dependencies - packages and packages ki dependency
+
+devdepenedencies - aise packages jo sirf development mein kaam aayenge
+par jab ap ban jayega aur deploy hojayega tab hum in packges ko use nahi kar rahe hoge.
+
+scripts - Understanding default scripts PATHS and custom scripts
