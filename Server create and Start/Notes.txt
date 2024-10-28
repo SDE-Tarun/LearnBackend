@@ -1,0 +1,13 @@
+Protocols-
+Internet pe kuch bhi karne ke liye rules banaye gaye hai unko duara jinhone internet banaya hai.
+ab un rules ko follow karna zaruri hai.
+aur yeh rules follow ho isliye yeh rules apke operating systems ke software mein pre-installed aate hai.
+
+http - protocol
+Yahi protocol ya rule hai jisko follow bina kare ap internet par na kuch request bhejh sakte ho na hi
+internet se kuch bhi response mangva skte ho.
+
+https - basically http ke top pe build hai.
+
+
+
