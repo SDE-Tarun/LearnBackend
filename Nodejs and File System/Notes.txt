@@ -1,0 +1,133 @@
+Node.js Basics
+Introduction to Node.js
+Installing Node.js and npm
+to check node and npm is installed
+node -v and npm -v
+
+Working with modules
+
+File system operation.
+Understanding HTTP module.
+
+npm - jese playstore ya app store hum use krte hai apps download krne ke liye,
+vese hi hum npm use krte hai code mtlb packages download krne ke liye.
+
+Nodejs - Programming language, technology, framework, library, software - X mtlb Nahi Hai
+Nodejs - JS Runtime Environment hai.
+
+Hum js ka code likhenge jo wrapper layer of js recieve kregi and vo v8 engine ke cpp modules ke
+sath ek server create krega.
+
+Nodejs is a javascript runtime environment 
+
+Working with node and npm
+npm init
+node basic usage
+
+----------------------------------------------------------------------------------------------
+
+Jab bhi ap node ka project bana rahe hai sabse pehle
+npm init -y --> Yeh package.json file banake dega.
+
+Go to Nodejs Docs
+Open the link --> https://nodejs.org/docs/latest/api/fs.html
+Click on File system
+CJS --> Common Javascript
+ESM -> Ecmascript Module
+
+Use CJS
+const fs = require('node:fs/promises'); --> Copy and paste in scipt.js File
+
+To use the callback and sync APIs: as we are not using promise based API's.
+const fs = require('node:fs');
+
+// callbacks - function
+
+1. File write :
+
+// fs.writeFile("name of file", "hey hello kese ho", function (err) {
+//     if(err){
+//         console.error(err);
+//     }
+//     else{
+//         console.log("done")
+//     }
+// })
+
+2. File append :
+
+// fs.writeFile("name of file", " data to be inserted", function (err) {
+//     if(err){
+//         console.error(err);
+//     }
+//     else{
+//         console.log("done")
+//     }
+// })
+
+
+3. File Rename :
+
+fs.rename("name of old file", "name of new file", function (err){
+    if(err) console.error(err.message);
+    else console.log("rename done");
+})
+
+4. File Copy :
+
+fs.copyFile("name of file", "destination of file", function (err){
+    if(err) console.error(err.message);
+    else console.log("copy done");
+})
+
+5. File remove (unlink) :
+
+fs.unlink("name of file", function (err){
+    if(err) console.error(err.message);
+    else console.log("removed done");
+})
+
+6. Remove Directory if empty (folder) :
+
+// options - {recursive : true}
+
+fs.rmdir("name of folder", {options} , function (err){
+    if(err) console.error(err);
+    else console.log("removed directory");
+})
+
+7. Folder remove if not empty :
+
+fs.rm("name of folder", {options} , function (err){
+    if(err) console.error(err);
+    else console.log("removed directory");
+})
+
+8. Folder create
+
+fs.mkdir("path", {options} , function (err) {
+    if(err) console.error(err);
+    else console.log('Folder created');
+})
+
+9. Folder read
+
+// fs.readdir("path", function (err, files) {
+//     if (err) console.error('Error reading folder:', err);
+//     else console.log('Files in folder:', files);
+// })
+
+10. File read
+
+// fs.readFile("path", "utf-8", function (err, data) {
+//     if (err) console.error('Error reading file:', err);
+//     else console.log('Files content:', data);
+// })
+
+
+
+
+
+
+
+
